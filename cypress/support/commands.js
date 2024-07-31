@@ -1,25 +1,9 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('criarconta', () => {
+
+	cy.visit('https://advantageonlineshopping.com/#/register');
+	cy.get('#form > .sec-view > .sec-view > .inputContainer > #username').type('usuario_teste');
+	cy.get('#form > .sec-view > .sec-view > .inputContainer > #email').type('email_teste@example.com');
+	cy.get('#form > .sec-view > .sec-view > .inputContainer > #password').type('senha_teste');
+	cy.get('#form > .sec-view > .sec-view > .inputContainer > #confirm_password').type('senha_teste');
+	cy.get('#form > .sec-view > .sec-view > .inputContainer > #register_btnundefined').click();
+});
