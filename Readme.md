@@ -10,7 +10,7 @@
 
 # Instalação
 
-```bash
+bash
 npm install cypress --save-dev
 npx cypress open
 
@@ -27,3 +27,20 @@ npx cypress open
 npx cypress run
 
 
+
+O projeto está estruturado da seguinte forma:
+nome-do-repositorio/
+
+├── cypress/
+│   ├── e2e/
+│   │   └── api atuomatizada (get)/
+│   │   └──Testes automatizados
+│   ├── plugins/
+│   │   └── index.js
+│   ├── support/
+│   │   ├── commands.js
+│   │   ├──criarconta.js
+│   │   └── index.js
+├── cypress.json
+├── package.json
+└── README.md
